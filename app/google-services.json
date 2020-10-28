@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "429494761058",
+    "firebase_url": "https://newsroulette-70fd5.firebaseio.com",
+    "project_id": "newsroulette-70fd5",
+    "storage_bucket": "newsroulette-70fd5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:429494761058:android:433036ed9b96bfcdea433b",
+        "android_client_info": {
+          "package_name": "com.example.newsroulette"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "429494761058-lc60rq86a43q30rukj0v36hq89mmr7pa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.newsroulette",
+            "certificate_hash": "f31e8c8c422c482698c824dae439a9b8545b50b8"
+          }
+        },
+        {
+          "client_id": "429494761058-4qlgr56vhr65rdt71lrp5riv39q387cc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFh3sy6t9Fzy1G9x6Ofa4VuYDi4faxk0E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "429494761058-4qlgr56vhr65rdt71lrp5riv39q387cc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
