@@ -15,15 +15,15 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.squareup.picasso.Picasso;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class FeedAdapter extends RecyclerView.Adapter<ViewHolder> {
-    ArrayList<News> list;
+    List<News> list;
 
-    FeedAdapter(ArrayList<News>list){
+    FeedAdapter(List<News>list){
         this.list = list;
     }
+
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -31,13 +31,11 @@ public class FeedAdapter extends RecyclerView.Adapter<ViewHolder> {
         return new ViewHolder(view);
     }
 
-
-
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.name.setText(list.get(position).getTitle());
         holder.description.setText(list.get(position).getDescription());
-        //Picasso.get().load(list.get(position).getImage()).into(holder.image);
+        Picasso.get().load(list.get(position).getImage()).into(holder.image);
 
     }
 

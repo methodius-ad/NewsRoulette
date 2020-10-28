@@ -17,13 +17,14 @@
             android:id="@+id/news_image"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginStart="10dp"
-            android:src="@mipmap/ic_launcher_round"/>
+            android:layout_marginStart="10dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
             android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:orientation="vertical">
 
             <TextView
@@ -31,19 +32,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textColor="#970707"
-                android:textSize="45sp"
+                android:textSize="15sp"
                 android:fontFamily="sans-serif-condensed-medium"
-                android:layout_weight="2"
-                android:text="Title"/>
+                android:layout_weight="2"/>
             <TextView
                 android:id="@+id/news_text"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textSize="20sp"
+                android:textSize="12sp"
                 android:fontFamily="sans-serif-condensed"
                 android:layout_marginTop="20dp"
-                android:layout_weight="1"
-                android:text="r3r23r23wrwr"/>
+                android:layout_weight="1"/>
 
         </LinearLayout>
 

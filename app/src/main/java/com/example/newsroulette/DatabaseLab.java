@@ -26,5 +26,4 @@ public class DatabaseLab {
         mNews = new News();
     }
 
-
 }

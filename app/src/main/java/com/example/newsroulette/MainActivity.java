@@ -23,7 +23,7 @@ import java.util.HashMap;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    ArrayList<News> list;
+    List<News> list;
     RecyclerView recyclerView;
     RecyclerView.Adapter adapter;
 

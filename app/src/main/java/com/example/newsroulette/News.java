@@ -1,26 +1,13 @@
 package com.example.newsroulette;
 
-import android.provider.ContactsContract;
-
-import java.net.URI;
-import java.util.ArrayList;
-import java.util.List;
 
 public class News {
-    private String mTitle;
     private String mDescription;
     private String mImage;
+    private String mTitle;
 
     News(){
 
-    }
-
-    public String getTitle() {
-        return mTitle;
-    }
-
-    public void setTitle(String title) {
-        mTitle = title;
     }
 
     public String getDescription() {
@@ -37,6 +24,14 @@ public class News {
 
     public void setImage(String image) {
         mImage = image;
+    }
+
+    public String getTitle() {
+        return mTitle;
+    }
+
+    public void setTitle(String title) {
+        mTitle = title;
     }
 
 
