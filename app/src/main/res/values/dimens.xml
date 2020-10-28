@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_layout_height">200dp</dimen>
+    <dimen name="margin_start">10dp</dimen>
+    <dimen name="margin_end">10dp</dimen>
+    <dimen name="margin_top">10dp</dimen>
+    <dimen name="margin_bottom">10dp</dimen>
+    <dimen name="card_corner_radius">20sp</dimen>
+    <dimen name="title_size">15sp</dimen>
+    <dimen name="desc_size">12sp</dimen>
+    <dimen name="max_text_length">250</dimen>
+</resources>

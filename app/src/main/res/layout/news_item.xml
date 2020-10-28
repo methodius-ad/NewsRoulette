@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="200dp"
+    android:layout_height="@dimen/card_layout_height"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_marginTop="20dp"
-    android:layout_marginStart="20dp"
-    android:layout_marginEnd="20dp"
-    app:cardCornerRadius="20sp">
+    android:layout_marginTop="@dimen/margin_top"
+    android:layout_marginStart="@dimen/margin_start"
+    android:layout_marginEnd="@dimen/margin_end"
+    android:layout_marginBottom="@dimen/margin_bottom"
+    app:cardCornerRadius="@dimen/card_corner_radius">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,31 +18,31 @@
             android:id="@+id/news_image"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginStart="10dp"/>
+            android:layout_marginStart="@dimen/margin_start"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginStart="@dimen/margin_start"
+            android:layout_marginEnd="@dimen/margin_end"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/news_title"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textColor="#970707"
-                android:textSize="15sp"
+                android:textColor="@color/itemColorTitle"
+                android:textSize="@dimen/title_size"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:layout_weight="2"/>
             <TextView
                 android:id="@+id/news_text"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textSize="12sp"
+                android:maxLength="250"
+                android:textSize="@dimen/desc_size"
                 android:fontFamily="sans-serif-condensed"
-                android:layout_marginTop="20dp"
                 android:layout_weight="1"/>
 
         </LinearLayout>
