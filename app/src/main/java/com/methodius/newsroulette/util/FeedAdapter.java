@@ -1,32 +1,28 @@
-package com.example.newsroulette;
+package com.methodius.newsroulette.util;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
-import android.content.Intent;
-import android.net.Uri;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.methodius.newsroulette.R;
+import com.methodius.newsroulette.model.News;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
 public class FeedAdapter extends RecyclerView.Adapter<ViewHolder> {
-    private List<News> mList;
-    private Context mContext;
 
-    FeedAdapter(Context context, List<News>list){
-        mContext = context;
-        mList = list;
+    private List<News> list;
+    private Context context;
+
+    public FeedAdapter(Context context, List<News>list){
+        this.context = context;
+        this.list = list;
     }
 
     @NonNull
@@ -38,14 +34,13 @@ public class FeedAdapter extends RecyclerView.Adapter<ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull final ViewHolder holder, int position) {
-        holder.name.setText(mList.get(position).getTitle());
-        holder.description.setText(mList.get(position).getDescription());
-        Picasso.get().load(mList.get(position).getImage()).into(holder.image);
-
+        holder.name.setText(list.get(position).getTitle());
+        holder.description.setText(list.get(position).getDescription());
+        Picasso.get().load(list.get(position).getImage()).into(holder.image);
     }
 
     @Override
     public int getItemCount() {
-        return mList.size();
+        return list.size();
     }
 }

@@ -1,4 +1,4 @@
-package com.example.newsroulette;
+package com.methodius.newsroulette;
 
 import org.junit.Test;
 
